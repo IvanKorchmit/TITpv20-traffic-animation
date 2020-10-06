@@ -57,7 +57,7 @@ body
         top: 0px;
     }
 }
-@keyframes fade
+@keyframes fade /* Fade in circle */
 {
     0% {
         opacity: 0%;
