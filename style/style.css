@@ -34,6 +34,8 @@ body
     width: 100px;
     background-color: yellow;
     border-radius: 50%;
+    transition-property: transform;
+    transition-duration: 3s;
     
 }
 .circleGreen
@@ -45,6 +47,10 @@ body
     animation-name: fade;
     animation-duration: 5s;
     animation-fill-mode: forwards;
+}
+.circleYellow:hover
+{
+    transform: rotateY(180deg);
 }
 @keyframes topDown
 {
