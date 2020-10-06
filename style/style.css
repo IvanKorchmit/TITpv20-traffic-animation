@@ -1,0 +1,68 @@
+*
+{
+    padding: 0;
+    margin: 0 auto;
+    background-color: black;
+}
+body
+{
+    margin: auto;
+}
+.mainDiv {
+    background-color: cyan;
+    width: 640px;
+    height: 480px;
+}
+.mainDiv > div
+{
+    margin: 0 auto;
+}
+.circleRed
+{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    animation-name: topDown;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.circleYellow
+{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    
+}
+.circleGreen
+{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+    animation-name: fade;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes topDown
+{
+    0%
+    {
+        top: -100px;
+    }
+    100%
+    {
+        top: 0px;
+    }
+}
+@keyframes fade
+{
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
